@@ -73,9 +73,9 @@ public class SeleniumjUnit {
     @Test
     //Clear the text in the filter text and verify that we have the original five rows
     public void test4() throws Exception{
-//        driver.findElement(By.id("filter")).clear();
-//        int size = driver.findElement(By.tagName("tbody")).findElements(By.tagName("tr")).size();
-//        assertThat(size, is(5));
+        driver.findElement(By.id("filter")).clear();
+        int size = driver.findElement(By.tagName("tbody")).findElements(By.tagName("tr")).size();
+        assertThat(size, is(5));
     }
     
     @Test
